@@ -581,7 +581,7 @@ function LiveHeatMap({ className = '' }) {
         {/* react-simple-maps ComposableMap with real West Bengal GeoJSON */}
         <ComposableMap
           projection="geoMercator"
-          projectionConfig={{ scale: 5520, center: center }}
+          projectionConfig={{ scale: 6600, center: center }}
           style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
         >
           <ZoomableGroup zoom={zoom} center={center} onMoveEnd={({ coordinates, zoom: z }) => { setCenter(coordinates); setZoom(z); }}>
